@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.carlo.inventario.invEditActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.0"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="EAN"
+        android:textSize="14dp" />
+    <EditText
+        android:id="@+id/txtEan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:background="@drawable/edittext_bg"
+        android:textSize="34dp"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:maxLength="13"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1.0"
+        android:orientation="vertical"
+        android:id="@+id/layout_qtd"
+        android:visibility="gone">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="QTD"
+                android:textSize="14dp" />
+        <EditText
+            android:id="@+id/txtQtd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="1"
+            android:textAlignment="center"
+            android:background="@drawable/edittext_bg"
+            android:textSize="34dp"
+            android:maxLength="4"
+            android:digits="-0123456789"
+            android:inputType="number"
+            />
+        </LinearLayout>
+
+
+        <Button
+            android:text="Cancelar"
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnCancelClicl"
+            android:background="@color/button"
+            android:textColor="@color/buttonText"
+
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:text="Modo Manual"
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnAddClicl"
+        android:background="@color/button"
+        android:textColor="@color/buttonText"
+
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@color/selected"
+        android:textColor="@color/selectedText"
+        android:id="@+id/row_ultimo"
+        android:visibility="gone">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:id="@+id/row_descricao"
+            android:textSize="16dp"
+            android:text=""
+            android:gravity="top"
+            android:layout_marginTop="-14dp"
+            android:textColor="@color/selectedText"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="0"
+            android:id="@+id/row_qtd"
+            android:textSize="34dp"
+            android:text=""
+            android:textColor="@color/selectedText"/>
+        />
+
+
+    </LinearLayout>
+
+
+
+    <ListView
+        android:id="@+id/lstProduto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </ListView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:background="@color/selected"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Itens: "
+                android:textColor="@color/selectedText"/>
+            <TextView
+                android:id="@+id/totalProdutos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="0/0"
+                android:textColor="@color/selectedText"/>
+        </LinearLayout>
+
+
+
+        <Button
+            android:text="Finalizar contagem"
+            android:id="@+id/btnFinalizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="btnFinalizarClicl"
+            android:background="@color/button"
+            android:textColor="@color/buttonText"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

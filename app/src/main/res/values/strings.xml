@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">inventario</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="modo_manual">Modo Manual</string>
+    <string name="modo_automatico">Modo Automático</string>
+
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.carlo.inventario.invListActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    >
+
+
+        <EditText
+            android:id="@+id/listSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:inputType="number"
+            android:digits="0123456789"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asdasd"
+            android:onClick="btnAddInventarioClick"
+            android:visibility="gone"
+            />
+
+        <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/listview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="209dp"
+            android:layout_weight="100"
+            android:visibility="gone"
+            android:focusable="false"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Para começar copie um arquivo de escopo para a pasta 'cardhu/Armazenamento do telefone/inventario'."
+            android:id="@+id/txtVazio"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAlignment="gravity"
+            android:padding="8dp"
+            />
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Atualizar"
+            android:onClick="btnRefreshClick"
+            android:background="@color/button"
+            android:textColor="@color/buttonText"
+            />
+
+
+
+</LinearLayout>

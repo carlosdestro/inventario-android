@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal"
+    android:id="@+id/row_row">
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:id="@+id/row_descricao"
+        android:textSize="16dp"
+        android:text="Header a asd sdg sdg ds ds asdasdb asmdb asd asjd fdf df as fa 111"
+        android:gravity="top"
+        android:layout_marginTop="-14dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_weight="0"
+        android:id="@+id/row_qtd"
+        android:textSize="34dp"
+        android:text="23"/>
+    />
+
+
+</LinearLayout>
